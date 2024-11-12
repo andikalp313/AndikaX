@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import router from "next/router";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -54,7 +55,7 @@ export default function HeroSection() {
               onClick={() => router.push("/servicepage")}
               className="text-cyan-100 text-[20px] md:text-[24px] font-semibold cursor-pointer font-plusJakartaSans"
             >
-              Explore Our Products
+              <Link href={"/features/servicepage"}>Explore Our Products</Link>
             </span>
             <motion.div
               whileHover={{ scale: 1.1 }}
