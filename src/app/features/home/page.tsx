@@ -6,16 +6,14 @@ import HeroSection from "@/components/Jumbotron/page";
 
 import PaginationSection from "@/components/pagination/PaginationSection";
 import TestiSection from "@/components/testimoni/testimoni";
-import { Pagination } from "@/components/ui/pagination";
-import { getEntries } from "@/lib/contentful";
 
-import Image from "next/image";
+import { getEntries } from "@/lib/contentful";
 
 interface HomeProps {
   searchParams: { [key: string]: string };
 }
 
-export default async function Home({ searchParams }: HomeProps) {
+export default async function HomeMain({ searchParams }: HomeProps) {
   const blogs = await getEntries(Number(searchParams.page) || 1);
 
   if (!blogs) {

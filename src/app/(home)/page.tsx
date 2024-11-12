@@ -1,12 +1,12 @@
 import React from "react";
-import Home from "../features/servicepage/page";
+import HomeMain from "../features/home/page";
 
-const HomeMain = () => {
+const Home = () => {
   return (
     <div>
-      <Home />
+      <HomeMain searchParams={{}} />
     </div>
   );
 };
 
-export default HomeMain;
+export default Home;
