@@ -22,24 +22,24 @@ export default function Navbar() {
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
           <a
             onClick={() => router.push("/")}
-            className="text-cyan-400 hover:text-cyan-500 transition duration-300 transform hover:scale-110 cursor-pointer"
+            className="text-gray-300 hover:text-cyan-500 transition duration-300 transform hover:scale-110 cursor-pointer"
           >
             Home
           </a>
           <a
-            onClick={() => router.push("/aboutus")}
+            onClick={() => router.push("/features/aboutus")}
             className="text-gray-300 hover:text-cyan-400 transition duration-300 transform hover:scale-110 cursor-pointer"
           >
             About
           </a>
           <a
-            onClick={() => router.push("/servicepage")}
+            onClick={() => router.push("/features/servicepage")}
             className="text-gray-300 hover:text-cyan-400 transition duration-300 transform hover:scale-110 cursor-pointer"
           >
             Product
           </a>
           <a
-            onClick={() => router.push("/ourteam")}
+            onClick={() => router.push("/features/ourteam")}
             className="text-gray-300 hover:text-cyan-400 transition duration-300 transform hover:scale-110 cursor-pointer"
           >
             Our Team
@@ -47,7 +47,10 @@ export default function Navbar() {
         </nav>
 
         {/* Contact Us Button for Desktop */}
-        <div onClick={() => router.push("/contact")} className="hidden md:flex">
+        <div
+          onClick={() => router.push("/features/contact")}
+          className="hidden md:flex"
+        >
           <button className="py-2 px-5 text-gray-900 font-semibold rounded-lg bg-cyan-500 hover:bg-cyan-600 transition duration-300 transform hover:scale-105 shadow-lg">
             Contact Us
           </button>
@@ -92,7 +95,7 @@ export default function Navbar() {
             </a>
             <a
               onClick={() => {
-                router.push("/aboutus");
+                router.push("/features/aboutus");
                 setIsMobileMenuOpen(false);
               }}
               className="text-gray-300 hover:text-cyan-400 transition duration-300"
@@ -101,7 +104,7 @@ export default function Navbar() {
             </a>
             <a
               onClick={() => {
-                router.push("/servicepage");
+                router.push("/features/servicepage");
                 setIsMobileMenuOpen(false);
               }}
               className="text-gray-300 hover:text-cyan-400 transition duration-300"
@@ -110,7 +113,7 @@ export default function Navbar() {
             </a>
             <a
               onClick={() => {
-                router.push("/ourteam");
+                router.push("/features/ourteam");
                 setIsMobileMenuOpen(false);
               }}
               className="text-gray-300 hover:text-cyan-400 transition duration-300"
@@ -119,7 +122,7 @@ export default function Navbar() {
             </a>
             <a
               onClick={() => {
-                router.push("/contact");
+                router.push("/features/contact");
                 setIsMobileMenuOpen(false);
               }}
               className="text-gray-300 hover:text-cyan-400 transition duration-300"

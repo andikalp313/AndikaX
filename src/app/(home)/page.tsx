@@ -1,4 +1,4 @@
-import AboutSection from "@/components/aboutsection/page";
+import AboutSection from "@/components/aboutsection/AboutSection";
 import BlogList from "@/components/bloglist/BlogList";
 
 import FooterSection from "@/components/footer/footer";
