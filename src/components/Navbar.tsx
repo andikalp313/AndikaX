@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 export default function Navbar() {
   const router = useRouter();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -8,12 +9,14 @@ export default function Navbar() {
     <div className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-300 shadow-md w-full sticky top-0 z-50 border-b border-gray-700">
       <div className="flex py-3 px-6 md:px-24 justify-between items-center">
         {/* Logo and Brand Name */}
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-[url('/images/logoroboic.jpg')] bg-center bg-cover rounded-full border border-cyan-500 shadow-lg"></div>
-          <span className="text-cyan-400 font-semibold text-lg tracking-wider">
-            AndikaX
-          </span>
-        </div>
+        <Link href={"/"}>
+          <div className="flex items-center gap-3">
+            <div className="w-10 animate-bounce h-10 bg-[url('/images/logoroboic.jpg')] bg-center bg-cover rounded-full border border-cyan-500 shadow-lg"></div>
+            <span className="text-cyan-400 font-semibold text-lg tracking-wider">
+              AndikaX
+            </span>
+          </div>
+        </Link>
 
         {/* Desktop Navigation Links */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">

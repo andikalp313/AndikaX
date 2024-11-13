@@ -19,7 +19,7 @@ export default function AboutSection() {
               scale: 1.1,
               boxShadow: "0 4px 15px rgba(0, 255, 255, 0.4)",
             }}
-            className="flex items-center justify-center gap-2 w-44 px-4 py-2 border-2 border-cyan-400 rounded-full shadow-lg transition-transform duration-200"
+            className=" flex items-center justify-center gap-2 w-44 px-4 py-2 border-2 border-cyan-400 rounded-full shadow-lg transition-transform duration-200"
           >
             <span className="text-cyan-400 font-poppins text-center text-lg font-medium">
               About Us

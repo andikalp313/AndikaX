@@ -39,7 +39,7 @@ export default function HeroSection() {
 
         {/* Background Image Section with Hover Effect */}
         <div
-          className="flex h-[300px] md:h-[400px] lg:h-[557px] lg:px-10 w-full items-center rounded-[30px] lg:rounded-[54px] bg-cover bg-center overflow-hidden  bg-blend-overlay relative transition-all duration-300 transform hover:scale-105"
+          className="flex h-[300px] md:h-[400px] lg:h-[557px] lg:px-10  w-full items-center rounded-[30px] lg:rounded-[54px] bg-cover bg-center overflow-hidden  bg-blend-lighten relative transition-all duration-300 transform hover:scale-105"
           style={{
             backgroundImage: "url('/images/jumbotron.jpg')",
             backgroundColor: "#1a1a1a",
@@ -49,9 +49,9 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.8 }}
-            className="flex items-center justify-center gap-2.5 px-6 py-4 bg-cyan-900 bg-opacity-60 rounded-full shadow-lg hover:bg-cyan-700 transition-colors duration-200"
+            className="flex items-center justify-center gap-2.5 px-6 py-4 bg-cyan-900 bg-opacity-75 rounded-full shadow-lg hover:bg-cyan-700 transition-colors duration-200"
           >
-            <span className="text-cyan-100 text-[20px] md:text-[24px] font-semibold cursor-pointer font-plusJakartaSans">
+            <span className="text-cyan-100 text-[20px] md:text-[24px] font-semibold cursor-pointer font-plusJakartaSans animate-pulse">
               <Link href={"/service-page"}>Explore Our Products</Link>
             </span>
             <motion.div
