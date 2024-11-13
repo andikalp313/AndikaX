@@ -12,7 +12,7 @@ export default function Navbar() {
         <Link href={"/"}>
           <div className="flex items-center gap-3">
             <div className="w-10 animate-bounce h-10 bg-[url('/images/logoroboic.jpg')] bg-center bg-cover rounded-full border border-cyan-500 shadow-lg"></div>
-            <span className="text-cyan-400 font-semibold text-lg tracking-wider">
+            <span className="text-cyan-400 font-semibold text-lg tracking-wider ">
               AndikaX
             </span>
           </div>
