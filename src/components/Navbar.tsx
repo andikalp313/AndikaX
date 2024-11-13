@@ -1,12 +1,9 @@
-"use client"; // This makes it a Client Component
-
+"use client";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-
 export default function Navbar() {
   const router = useRouter();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   return (
     <div className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-300 shadow-md w-full sticky top-0 z-50 border-b border-gray-700">
       <div className="flex py-3 px-6 md:px-24 justify-between items-center">
@@ -27,19 +24,20 @@ export default function Navbar() {
             Home
           </a>
           <a
-            onClick={() => router.push("/features/aboutus")}
+            onClick={() => router.push("/about-us")}
             className="text-gray-300 hover:text-cyan-400 transition duration-300 transform hover:scale-110 cursor-pointer"
           >
             About
           </a>
+
           <a
-            onClick={() => router.push("/features/servicepage")}
+            onClick={() => router.push("/service-page")}
             className="text-gray-300 hover:text-cyan-400 transition duration-300 transform hover:scale-110 cursor-pointer"
           >
             Product
           </a>
           <a
-            onClick={() => router.push("/features/ourteam")}
+            onClick={() => router.push("/our-team")}
             className="text-gray-300 hover:text-cyan-400 transition duration-300 transform hover:scale-110 cursor-pointer"
           >
             Our Team
@@ -47,10 +45,7 @@ export default function Navbar() {
         </nav>
 
         {/* Contact Us Button for Desktop */}
-        <div
-          onClick={() => router.push("/features/contact")}
-          className="hidden md:flex"
-        >
+        <div onClick={() => router.push("/contact")} className="hidden md:flex">
           <button className="py-2 px-5 text-gray-900 font-semibold rounded-lg bg-cyan-500 hover:bg-cyan-600 transition duration-300 transform hover:scale-105 shadow-lg">
             Contact Us
           </button>
@@ -95,7 +90,7 @@ export default function Navbar() {
             </a>
             <a
               onClick={() => {
-                router.push("/features/aboutus");
+                router.push("/about-us");
                 setIsMobileMenuOpen(false);
               }}
               className="text-gray-300 hover:text-cyan-400 transition duration-300"
@@ -104,7 +99,7 @@ export default function Navbar() {
             </a>
             <a
               onClick={() => {
-                router.push("/features/servicepage");
+                router.push("/service-page");
                 setIsMobileMenuOpen(false);
               }}
               className="text-gray-300 hover:text-cyan-400 transition duration-300"
@@ -113,7 +108,7 @@ export default function Navbar() {
             </a>
             <a
               onClick={() => {
-                router.push("/features/ourteam");
+                router.push("/our-team");
                 setIsMobileMenuOpen(false);
               }}
               className="text-gray-300 hover:text-cyan-400 transition duration-300"
@@ -122,7 +117,7 @@ export default function Navbar() {
             </a>
             <a
               onClick={() => {
-                router.push("/features/contact");
+                router.push("/contact");
                 setIsMobileMenuOpen(false);
               }}
               className="text-gray-300 hover:text-cyan-400 transition duration-300"

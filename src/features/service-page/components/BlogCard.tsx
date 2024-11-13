@@ -1,8 +1,7 @@
 "use client";
-
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import Image from "next/image";
-import { Badge } from "../ui/badge";
+import { Badge } from "../../../components/ui/badge";
 import { Blog } from "@/types/blog";
 import { FC } from "react";
 import { format } from "date-fns";

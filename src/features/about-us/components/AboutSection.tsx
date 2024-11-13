@@ -3,26 +3,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function AboutSection() {
+export default function AboutPageComp() {
   return (
     <div className="flex flex-col items-center gap-8 px-6 py-12 lg:px-20 w-full  text-white">
       <div className="flex flex-col items-center gap-8 w-full max-w-[1280px]">
-        {/* About Us Badge with Hover Animation */}
-        <motion.div
-          initial={{ scale: 0.9, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          whileHover={{
-            scale: 1.1,
-            boxShadow: "0 4px 15px rgba(0, 255, 255, 0.4)",
-          }}
-          className="flex items-center justify-center gap-2 w-32 px-4 py-2 border-2 border-cyan-400 rounded-full shadow-lg transition-transform duration-200"
-        >
-          <span className="text-cyan-400 font-poppins text-center text-lg font-medium">
-            About Us
-          </span>
-        </motion.div>
-
         {/* About Section Content with Image and Text Animation */}
         <div className="flex flex-col lg:flex-row items-center gap-16 w-full">
           {/* About Image with Fade-in, Scale, and Rotate Animation */}

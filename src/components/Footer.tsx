@@ -1,6 +1,5 @@
 import React from "react";
 import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
-
 export default function FooterSection() {
   return (
     <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-cyan-300 py-12 relative overflow-hidden">

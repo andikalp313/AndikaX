@@ -1,8 +1,6 @@
 "use client";
-
 import React from "react";
 import { motion } from "framer-motion";
-
 const ContactSection: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center p-8 md:p-16 gap-8 bg-gradient-to-r from-gray-900 to-black">

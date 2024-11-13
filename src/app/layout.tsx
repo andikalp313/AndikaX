@@ -1,9 +1,8 @@
-// app/layout.tsx
 import { Metadata } from "next";
 import localFont from "next/font/local";
-import Navbar from "../components/navbar/page"; // Import Navbar component
+import Navbar from "../components/Navbar";
 import "./globals.css";
-import FooterSection from "@/components/footer/footer";
+import FooterSection from "@/components/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,11 +30,9 @@ export default function RootLayout({
       <body
         className={`bg-gradient-to-b from-gray-900 via-gray-800 to-black ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* Add Navbar here */}
         <Navbar />
-
-        {/* Add padding-top to ensure content is not hidden behind the fixed navbar */}
         <main className="">{children}</main>
+        /<FooterSection />
       </body>
     </html>
   );

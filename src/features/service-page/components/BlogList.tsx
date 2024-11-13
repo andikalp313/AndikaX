@@ -1,5 +1,5 @@
 import { Blog } from "@/types/blog";
-import BlogCard from "../blogcard/BlogCard";
+import BlogCard from "@/features/service-page/components/BlogCard";
 import { FC } from "react";
 
 interface BlogListProps {
@@ -9,15 +9,6 @@ interface BlogListProps {
 const BlogList: FC<BlogListProps> = ({ blogs }) => {
   return (
     <section className="flex flex-col items-center gap-10 w-full px-6 lg:px-20 py-14  text-gray-200">
-      {/* Services Badge */}
-      <div className="flex items-center justify-center">
-        <div className="mt-6 max-w-fit flex items-center justify-center gap-2 rounded-full border-2 border-cyan-400 px-5 py-2 transition-all hover:bg-cyan-400 hover:text-gray-900">
-          <span className="text-cyan-400 font-mono text-lg md:text-[20px] font-semibold leading-normal tracking-wide">
-            Product
-          </span>
-        </div>
-      </div>
-
       {/* Title */}
       <div className="flex justify-center w-full text-center">
         <h2 className="text-cyan-400 font-mono text-3xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-normal max-w-2xl tracking-wide">

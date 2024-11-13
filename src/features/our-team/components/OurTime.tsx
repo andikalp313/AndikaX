@@ -1,11 +1,9 @@
-"use client"; // Ensures the file is treated as a Client Component
-
+"use client";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { motion } from "framer-motion"; // Import framer-motion
-import FooterSection from "@/components/footer/footer";
+import { motion } from "framer-motion";
 
-interface TeamMember {
+interface OurTime {
   id: number;
   name: string;
   position: string;
@@ -13,8 +11,8 @@ interface TeamMember {
   photoUrl: string;
 }
 
-export default function OurTeamPage() {
-  const [team, setTeam] = useState<TeamMember[]>([]);
+export default function OurTeam() {
+  const [team, setTeam] = useState<OurTime[]>([]);
 
   useEffect(() => {
     const fetchTeam = async () => {
